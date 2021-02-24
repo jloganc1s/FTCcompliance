@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="48806a7cdb6f97006aea3ebc7c9619e8" table="sys_data_policy2">
+    <sys_data_policy2 action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <apply_import_set>true</apply_import_set>
+        <apply_soap>true</apply_soap>
+        <conditions/>
+        <description/>
+        <enforce_ui>true</enforce_ui>
+        <inherit>false</inherit>
+        <model_id/>
+        <model_table>x_n1ll2_ftcc_ftc_compliance_requests</model_table>
+        <reverse_if_false>true</reverse_if_false>
+        <short_description>Sets the Description field to mandatory</short_description>
+        <sys_class_name>sys_data_policy2</sys_class_name>
+        <sys_created_by>jlogan2</sys_created_by>
+        <sys_created_on>2021-01-27 19:39:29</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>48806a7cdb6f97006aea3ebc7c9619e8</sys_domain>
+        <sys_domain_path>!!!/!!!/!!!/!#1/</sys_domain_path>
+        <sys_id>7bfe5e581b8aa450194a4159cc4bcb7a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Sets the Description field to mandatory</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="FTC Compliance" source="x_n1ll2_ftcc">6cfc5e141b8aa450194a4159cc4bcb4a</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="FTC Compliance">6cfc5e141b8aa450194a4159cc4bcb4a</sys_scope>
+        <sys_update_name>sys_data_policy2_7bfe5e581b8aa450194a4159cc4bcb7a</sys_update_name>
+        <sys_updated_by>jlogan2</sys_updated_by>
+        <sys_updated_on>2021-01-27 19:39:29</sys_updated_on>
+    </sys_data_policy2>
+</record_update>
