@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="FTC Compliance Requests" max_length="40" name="x_n1ll2_ftcc_ftc_compliance_requests" sizeclass="1" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Description" mandatory="true" max_length="200" name="description" type="string"/>
+        <element label="Domain" max_length="32" name="domain" type="domain_id"/>
+        <element attributes="edge_encryption_enabled=true" label="Due Date" mandatory="true" max_length="40" name="due_date" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" type="string"/>
+        <element attributes="encode_utf8=false" label="Primary Point of Contact" mandatory="true" max_length="32" name="primary_point_of_contact" reference="sys_user" type="reference"/>
+        <element label="Reoccuring?" max_length="40" name="reoccuring" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" display="true" label="Request Name" mandatory="true" max_length="40" name="request" type="string"/>
+        <element attributes="encode_utf8=false" label="Secondary Point of Contact" max_length="32" name="secondary_point_of_contact" reference="sys_user" type="reference"/>
+        <element default="javascript:current.getTableName();" dynamic_default_value="b5cb83a85f220100a9ad2572f2b4773c" label="Class" max_length="80" name="sys_class_name" type="sys_class_name" use_dynamic_default="true"/>
+        <element attributes="case_sensitive=true" label="Domain Path" max_length="255" name="sys_domain_path" type="domain_path"/>
+        <element attributes="encode_utf8=false" label="Team Responsible" mandatory="true" max_length="32" name="team_responsible" reference="sys_user_group" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Reoccurance due date" max_length="40" name="u_calendar_date_time_2" type="calendar_date_time"/>
+        <element label="New File Attachment" max_length="40" name="u_file_attachment_1" type="file_attachment"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" dependent="reoccuring" dependent_on_field="reoccuring" label="Frequency" max_length="40" name="u_frequency" type="string" use_dependent_field="true">
+            <choice>
+                <element dependent_value="true" inactive_on_update="false" label="Daily" sequence="0" value="Daily"/>
+                <element dependent_value="true" inactive_on_update="false" label="Weekly" sequence="1" value="Weekly"/>
+                <element dependent_value="true" inactive_on_update="false" label="Bi-weekly" sequence="2" value="Bi-weekly"/>
+                <element dependent_value="true" inactive_on_update="false" label="Monthly" sequence="3" value="Monthly"/>
+                <element dependent_value="true" inactive_on_update="false" label="Bi-monthly" sequence="4" value="Bi-monthly"/>
+                <element dependent_value="true" inactive_on_update="false" label="Quarterly" sequence="5" value="Quarterly"/>
+                <element dependent_value="true" inactive_on_update="false" label="Yearly" sequence="6" value="Yearly"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Source" max_length="40" name="u_source" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="new" label="State" mandatory="true" max_length="40" name="u_state" type="string">
+            <choice>
+                <element inactive_on_update="false" label="New" sequence="0" value="new"/>
+                <element inactive_on_update="false" label="Pending" sequence="1" value="pending"/>
+                <element inactive_on_update="false" label="In Process" sequence="2" value="in process"/>
+                <element inactive_on_update="false" label="Review" sequence="3" value="review"/>
+                <element inactive_on_update="false" label="Complete" sequence="4" value="complete"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="primary_point_of_contact"/>
+        </index>
+        <index name="index2">
+            <element name="domain"/>
+        </index>
+        <index name="index3">
+            <element name="secondary_point_of_contact"/>
+        </index>
+        <index name="index4">
+            <element name="sys_domain_path"/>
+        </index>
+        <index name="index5">
+            <element name="sys_class_name"/>
+        </index>
+        <index name="index6">
+            <element name="team_responsible"/>
+        </index>
+    </element>
+</database>
