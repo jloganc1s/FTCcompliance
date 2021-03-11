@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_dictionary action="INSERT_OR_UPDATE" element="due_date" table="x_n1ll2_ftcc_ftc_compliance_requests">
+    <sys_dictionary action="INSERT_OR_UPDATE" element="u_glide_list_1" table="x_n1ll2_ftcc_ftc_compliance_requests">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>edge_encryption_enabled=true</attributes>
+        <attributes>no_sort=true,slushbucket_ref_no_expand=true</attributes>
         <audit>false</audit>
         <calculation/>
         <choice>0</choice>
         <choice_field/>
         <choice_table/>
-        <column_label>Due Date</column_label>
+        <column_label>List of Evidence Required</column_label>
         <comments/>
         <create_roles/>
         <default_value/>
@@ -22,14 +22,14 @@
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element>due_date</element>
+        <element>u_glide_list_1</element>
         <element_reference>false</element_reference>
         <foreign_database/>
         <function_definition/>
         <function_field>false</function_field>
-        <internal_type display_value="">glide_date_time</internal_type>
-        <mandatory>true</mandatory>
-        <max_length>40</max_length>
+        <internal_type display_value="">glide_list</internal_type>
+        <mandatory>false</mandatory>
+        <max_length>1024</max_length>
         <name>x_n1ll2_ftcc_ftc_compliance_requests</name>
         <next_element/>
         <primary>false</primary>
@@ -47,18 +47,18 @@
         <staged>false</staged>
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>jlogan2</sys_created_by>
-        <sys_created_on>2021-01-27 19:39:26</sys_created_on>
+        <sys_created_on>2021-03-11 08:23:57</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>80a8c8931b222c10194a4159cc4bcbd3</sys_id>
+        <sys_id>a7b0adca1bf6e810194a4159cc4bcb78</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Due Date</sys_name>
+        <sys_name>List of Evidence Required</sys_name>
         <sys_package display_value="FTC Compliance" source="x_n1ll2_ftcc">6cfc5e141b8aa450194a4159cc4bcb4a</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="FTC Compliance">6cfc5e141b8aa450194a4159cc4bcb4a</sys_scope>
-        <sys_update_name>sys_dictionary_x_n1ll2_ftcc_ftc_compliance_requests_due_date</sys_update_name>
+        <sys_update_name>sys_dictionary_x_n1ll2_ftcc_ftc_compliance_requests_u_glide_list_1</sys_update_name>
         <sys_updated_by>jlogan2</sys_updated_by>
-        <sys_updated_on>2021-03-02 12:55:43</sys_updated_on>
+        <sys_updated_on>2021-03-11 08:23:57</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

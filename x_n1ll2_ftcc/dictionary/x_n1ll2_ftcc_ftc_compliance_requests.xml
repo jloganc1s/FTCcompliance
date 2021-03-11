@@ -1,16 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="FTC Compliance Requests" max_length="40" name="x_n1ll2_ftcc_ftc_compliance_requests" sizeclass="1" type="collection">
-        <element attributes="edge_encryption_enabled=true" label="Description" mandatory="true" max_length="200" name="description" type="string"/>
+    <element audit="true" label="FTC Compliance Requests" max_length="40" name="x_n1ll2_ftcc_ftc_compliance_requests" sizeclass="1" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Description" mandatory="true" max_length="9000" name="description" type="string"/>
         <element label="Domain" max_length="32" name="domain" type="domain_id"/>
         <element attributes="edge_encryption_enabled=true" label="Due Date" mandatory="true" max_length="40" name="due_date" type="glide_date_time"/>
         <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" type="string"/>
-        <element attributes="encode_utf8=false" label="Primary Point of Contact" mandatory="true" max_length="32" name="primary_point_of_contact" reference="sys_user" type="reference"/>
+        <element attributes="encode_utf8=false" label="Primary Point of Contact" mandatory="true" max_length="32" name="primary_point_of_contact" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Jessica Logan" sequence="0" value="Jessica Logan"/>
+                <element inactive_on_update="false" label="Jai Chandarana" sequence="1" value="Jai Chandarana"/>
+                <element inactive_on_update="false" label="Brett Heidenreich" sequence="2" value="Brett Heidenreich"/>
+                <element inactive_on_update="false" label="Steve Grogan" sequence="3" value="Steve Grogan"/>
+            </choice>
+        </element>
         <element label="Reoccuring?" max_length="40" name="reoccuring" type="boolean"/>
         <element attributes="edge_encryption_enabled=true" display="true" label="Request Name" mandatory="true" max_length="40" name="request" type="string"/>
-        <element attributes="encode_utf8=false" label="Secondary Point of Contact" max_length="32" name="secondary_point_of_contact" reference="sys_user" type="reference"/>
+        <element attributes="encode_utf8=false" choice="1" label="Secondary Point of Contact" mandatory="true" max_length="32" name="secondary_point_of_contact" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Jai Chandarana" sequence="0" value="Jai Chandarana"/>
+                <element inactive_on_update="false" label="Jessica Logan" sequence="1" value="Jessica Logan"/>
+                <element inactive_on_update="false" label="Brett Heidenreich" sequence="2" value="Brett Heidenreich"/>
+                <element inactive_on_update="false" label="Steve Grogan" sequence="3" value="Steve Grogan"/>
+            </choice>
+        </element>
         <element default="javascript:current.getTableName();" dynamic_default_value="b5cb83a85f220100a9ad2572f2b4773c" label="Class" max_length="80" name="sys_class_name" type="sys_class_name" use_dynamic_default="true"/>
         <element attributes="case_sensitive=true" label="Domain Path" max_length="255" name="sys_domain_path" type="domain_path"/>
-        <element attributes="encode_utf8=false" label="Team Responsible" mandatory="true" max_length="32" name="team_responsible" reference="sys_user_group" type="reference"/>
+        <element attributes="encode_utf8=false" label="Team Responsible" mandatory="true" max_length="32" name="team_responsible" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="FTCTeam1" sequence="0" value="FTCTeam1"/>
+                <element inactive_on_update="false" label="FTCTeam2" sequence="1" value="FTCTeam2"/>
+                <element inactive_on_update="false" label="FTCTeam3" sequence="2" value="FTCTeam3"/>
+            </choice>
+        </element>
         <element attributes="edge_encryption_enabled=true" label="Reoccurance due date" max_length="40" name="u_calendar_date_time_2" type="calendar_date_time"/>
         <element label="New File Attachment" max_length="40" name="u_file_attachment_1" type="file_attachment"/>
         <element attributes="edge_encryption_enabled=true" choice="1" dependent="reoccuring" dependent_on_field="reoccuring" label="Frequency" max_length="40" name="u_frequency" type="string" use_dependent_field="true">
@@ -24,8 +44,16 @@
                 <element dependent_value="true" inactive_on_update="false" label="Yearly" sequence="6" value="Yearly"/>
             </choice>
         </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="FTC Order Section" mandatory="true" max_length="40" name="u_ftc_order_number" type="string">
+            <choice>
+                <element inactive_on_update="false" label="1234" sequence="0" value="1234"/>
+                <element inactive_on_update="false" label="1235" sequence="1" value="1235"/>
+                <element inactive_on_update="false" label="1236" sequence="2" value="1236"/>
+            </choice>
+        </element>
+        <element attributes="no_sort=true,slushbucket_ref_no_expand=true" label="List of Evidence Required" max_length="1024" name="u_glide_list_1" type="glide_list"/>
         <element attributes="edge_encryption_enabled=true" label="Source" max_length="40" name="u_source" type="string"/>
-        <element attributes="edge_encryption_enabled=true" choice="3" default="new" label="State" mandatory="true" max_length="40" name="u_state" type="string">
+        <element attributes="edge_encryption_enabled=true" choice="3" default="new" label="Status" mandatory="true" max_length="40" name="u_state" type="string">
             <choice>
                 <element inactive_on_update="false" label="New" sequence="0" value="new"/>
                 <element inactive_on_update="false" label="Pending" sequence="1" value="pending"/>
@@ -34,6 +62,7 @@
                 <element inactive_on_update="false" label="Complete" sequence="4" value="complete"/>
             </choice>
         </element>
+        <element attributes="edge_encryption_enabled=true" label="Work notes" mandatory="true" max_length="40" name="u_work_notes" type="journal_input"/>
         <index name="index">
             <element name="primary_point_of_contact"/>
         </index>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="DELETE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>false</advanced>
+        <condition/>
+        <description>Allow write for u_state in x_n1ll2_ftcc_ftc_compliance_requests, for users with roles (x_n1ll2_ftcc.ftc manager, x_n1ll2_ftcc.ftc admin).</description>
+        <name>x_n1ll2_ftcc_ftc_compliance_requests.u_state</name>
+        <operation display_value="write">write</operation>
+        <script/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>jlogan2</sys_created_by>
+        <sys_created_on>2021-03-11 08:56:38</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>5638694a1b3ae810194a4159cc4bcbda</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_n1ll2_ftcc_ftc_compliance_requests.u_state</sys_name>
+        <sys_package display_value="FTC Compliance" source="x_n1ll2_ftcc">6cfc5e141b8aa450194a4159cc4bcb4a</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="FTC Compliance">6cfc5e141b8aa450194a4159cc4bcb4a</sys_scope>
+        <sys_update_name>sys_security_acl_5638694a1b3ae810194a4159cc4bcbda</sys_update_name>
+        <sys_updated_by>jlogan2</sys_updated_by>
+        <sys_updated_on>2021-03-11 08:56:38</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="FTC Compliance">6cfc5e141b8aa450194a4159cc4bcb4a</application>
+        <file_path/>
+        <instance_id>b1b970f16ffb5d406626a9cc5d3ee44c</instance_id>
+        <instance_name>c1securedev</instance_name>
+        <name>sys_security_acl_5638694a1b3ae810194a4159cc4bcbda</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><condition/><description>Allow write for u_state in x_n1ll2_ftcc_ftc_compliance_requests, for users with roles (x_n1ll2_ftcc.ftc manager, x_n1ll2_ftcc.ftc admin).</description><name>x_n1ll2_ftcc_ftc_compliance_requests.u_state</name><operation display_value="write">write</operation><script/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>jlogan2</sys_created_by><sys_created_on>2021-03-11 08:56:38</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>5638694a1b3ae810194a4159cc4bcbda</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_n1ll2_ftcc_ftc_compliance_requests.u_state</sys_name><sys_package display_value="FTC Compliance" source="x_n1ll2_ftcc">6cfc5e141b8aa450194a4159cc4bcb4a</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="FTC Compliance">6cfc5e141b8aa450194a4159cc4bcb4a</sys_scope><sys_update_name>sys_security_acl_5638694a1b3ae810194a4159cc4bcbda</sys_update_name><sys_updated_by>jlogan2</sys_updated_by><sys_updated_on>2021-03-11 08:56:38</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+        <payload_hash>361577480</payload_hash>
+        <record_name>x_n1ll2_ftcc_ftc_compliance_requests.u_state</record_name>
+        <reverted_from/>
+        <source>50a80c931b222c10194a4159cc4bcb18</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>jlogan2</sys_created_by>
+        <sys_created_on>2021-03-11 08:56:38</sys_created_on>
+        <sys_id>9638694a1b3ae810194a4159cc4bcbde</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17820808d3b0000001</sys_recorded_at>
+        <sys_updated_by>jlogan2</sys_updated_by>
+        <sys_updated_on>2021-03-11 08:56:38</sys_updated_on>
+        <type>Access Control</type>
+        <update_guid>9e38694a503ae810f87160d422fbfbdd</update_guid>
+        <update_guid_history>9e38694a503ae810f87160d422fbfbdd:361577480</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>jlogan2</sys_created_by>
+        <sys_created_on>2021-03-11 08:57:06</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_security_acl">sys_security_acl</sys_db_object>
+        <sys_id>0da42589e89e487c81619804ff4dd949</sys_id>
+        <sys_metadata>5638694a1b3ae810194a4159cc4bcbda</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_n1ll2_ftcc_ftc_compliance_requests.u_state</sys_name>
+        <sys_package display_value="FTC Compliance" source="x_n1ll2_ftcc">6cfc5e141b8aa450194a4159cc4bcb4a</sys_package>
+        <sys_parent display_value="Status">04a8c8931b222c10194a4159cc4bcbe1</sys_parent>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="FTC Compliance">6cfc5e141b8aa450194a4159cc4bcb4a</sys_scope>
+        <sys_scope_delete display_value="">0b7927cf5bf6478086653059cfd88400</sys_scope_delete>
+        <sys_update_name>sys_security_acl_5638694a1b3ae810194a4159cc4bcbda</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_5638694a1b3ae810194a4159cc4bcbda">9638694a1b3ae810194a4159cc4bcbde</sys_update_version>
+        <sys_updated_by>jlogan2</sys_updated_by>
+        <sys_updated_on>2021-03-11 08:57:06</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

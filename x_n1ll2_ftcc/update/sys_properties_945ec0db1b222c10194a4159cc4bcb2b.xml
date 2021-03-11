@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices/>
+        <description>FTC Compliance Requests activity formatter fields</description>
+        <ignore_cache>false</ignore_cache>
+        <is_private>false</is_private>
+        <name>glide.ui.x_n1ll2_ftcc_ftc_compliance_requests_activity.fields</name>
+        <read_roles/>
+        <suffix>x_n1ll2_ftcc</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>jlogan2</sys_created_by>
+        <sys_created_on>2021-03-02 13:20:32</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>945ec0db1b222c10194a4159cc4bcb2b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>glide.ui.x_n1ll2_ftcc_ftc_compliance_requests_activity.fields</sys_name>
+        <sys_package display_value="FTC Compliance" source="x_n1ll2_ftcc">6cfc5e141b8aa450194a4159cc4bcb4a</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="FTC Compliance">6cfc5e141b8aa450194a4159cc4bcb4a</sys_scope>
+        <sys_update_name>sys_properties_945ec0db1b222c10194a4159cc4bcb2b</sys_update_name>
+        <sys_updated_by>jlogan2</sys_updated_by>
+        <sys_updated_on>2021-03-02 13:20:32</sys_updated_on>
+        <type>string</type>
+        <value>number,description,domain,due_date,primary_point_of_contact,reoccuring,request,secondary_point_of_contact,team_responsible,u_file_attachment_1,u_work_notes,sys_mod_count,sys_updated_by,*Email*,*Attachments*,sys_class_name,sys_created_on,sys_created_by,sys_domain_path,u_ftc_order_number,u_frequency,u_calendar_date_time_2,u_source,u_state,sys_tags,sys_updated_on,*Relations*</value>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=945ec0db1b222c10194a4159cc4bcb2b"/>
+</record_update>
